@@ -23,7 +23,7 @@ function App() {
 
         <About />
         <Experience />
-        <Tech />
+        <Tech /> 
         <Works />
         <Feedbacks />
 
