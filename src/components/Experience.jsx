@@ -13,13 +13,25 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => {
+  let darkObj = {
+    background: "#1d1836",
+    color: "#fff",
+    arrowStyle: { borderRight: "7px solid  #1d1836" },
+  }
+  let lightObj = {
+    background: "#84AC87",
+    color: "#fff",
+    arrowStyle: { borderRight: "7px solid  #84AC87" },
+  }
+  const isDarkMode = JSON.parse(localStorage.getItem("isDarkMode"));
+  // console.log(isDarkMode)
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: isDarkMode ? darkObj.background : lightObj.background,
+        color: isDarkMode ? darkObj.color : lightObj.color,
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={isDarkMode ? darkObj.arrowStyle : lightObj.arrowStyle}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -35,7 +47,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='dark:text-secondary text-lsecondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
           {experience.company_name}
