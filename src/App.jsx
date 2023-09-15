@@ -47,12 +47,14 @@ function App() {
   return (
     <BrowserRouter>
       <div className={isDarkMode ? "dark" : ""}>
-        <div className="fixed z-50 top-0 right-0 py-6 px-4 ">
-          <button onClick={handleToggleTheme} >
+        {/* 主题切换按钮 */}
+        {/* <div className="fixed z-50 top-0 right-0 py-6 px-4 ">
+          <button onClick={handleToggleTheme}>
             {isDarkMode ? <FiSun size="1.5rem" /> : <FiMoon size="1.5rem" />}
           </button>
-          {/* 页面内容 */}
-        </div>
+        </div> */}
+
+        {/* 页面内容 */}
         <div className="relative z-0 bg-lprimary dark:bg-primary">
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
@@ -63,7 +65,7 @@ function App() {
           <Experience />
           <Tech />
           <Works />
-          <Feedbacks />
+          {/* <Feedbacks /> */}
 
           <div className="relative z-o">
             <Contact />

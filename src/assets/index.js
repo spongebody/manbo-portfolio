@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logo2 from "./logo-no-background.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -25,13 +26,19 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import sinotrans from "./company/sinotrans.png";
+import opensource from "./company/opensource.png";
 
+// project
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import hippo4j from "./project/hippo4j.jpg";
+import waiyun from "./project/waiyun.jpg";
 
 export {
   logo,
+  logo2,
   backend,
   creator,
   mobile,
@@ -54,9 +61,13 @@ export {
   threejs,
   meta,
   shopify,
+  opensource,
+  sinotrans,
   starbucks,
   tesla,
   carrent,
   jobit,
   tripguide,
+  hippo4j,
+  waiyun,
 };

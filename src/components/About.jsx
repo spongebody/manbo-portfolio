@@ -39,19 +39,18 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>介绍</p>
+        <h2 className={styles.sectionHeadText}>关于我.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 dark:text-secondary text-lsecondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        我是一名在读研究生，熟练web开发和移动端开发，熟练使用TypeScript和JavaScript，
+        并且熟悉使用Reac、Vue等流行的前端框架。掌握Node.js、Mongodb、python等后端相关技术。
+        了解机器学习和深度学习，熟练使用Git、Docker等工具以及Linux常用命令。
+        我具备较强的学习能力，能够快速学习并掌握新技术，能够独立完成项目开发。
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

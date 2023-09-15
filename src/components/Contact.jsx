@@ -70,62 +70,62 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] dark:bg-black-100 bg-bright-100 p-8 rounded-2xl'
+        className="flex-[0.75] dark:bg-black-100 bg-bright-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>快速与我联系</p>
+        <h3 className={styles.sectionHeadText}>邮箱联系.</h3>
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className="mt-12 flex flex-col gap-8"
         >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">你的名字</span>
             <input
-              type='text'
-              name='name'
+              type="text"
+              name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
-              className='dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="请填写你的名字?"
+              className="dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">你的邮箱</span>
             <input
-              type='email'
-              name='email'
+              type="email"
+              name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
-              className='dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="请填写你的邮箱地址"
+              className="dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">你的消息</span>
             <textarea
               rows={7}
-              name='message'
+              name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
-              className='dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="你想和我说什么呢？"
+              className="dark:bg-tertiary bg-ltertiary py-4 px-6 dark:placeholder:text-secondary placeholder:text-lsecondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
           <button
-            type='submit'
-            className='dark:bg-tertiary bg-ltertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-sm dark:shadow-primary shadow-lprimary'
+            type="submit"
+            className="dark:bg-tertiary bg-ltertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-sm dark:shadow-primary shadow-lprimary"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? "发送中..." : "发送"}
           </button>
         </form>
       </motion.div>
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
