@@ -24,8 +24,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="dark:bg-tertiary bg-ltertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
+{/*         背景设为黑色的 */}
         <div className="relative w-full h-[230px]">
           <img
             src={image}
