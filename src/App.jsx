@@ -15,35 +15,37 @@ import {
 } from "./components";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(getInitialMode());
+  // 先不考虑主题切换
+  const isDarkMode = true;
+  // const [isDarkMode, setIsDarkMode] = useState(getInitialMode());
 
-  function getInitialMode() {
-    const savedMode = JSON.parse(localStorage.getItem("isDarkMode"));
-    return savedMode || false;
-  }
+  // function getInitialMode() {
+  //   const savedMode = JSON.parse(localStorage.getItem("isDarkMode"));
+  //   return savedMode || false;
+  // }
 
-  function handleToggleTheme() {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    localStorage.setItem("isDarkMode", JSON.stringify(newMode));
-    if (newMode) {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.remove("dark");
-    }
-  }
+  // function handleToggleTheme() {
+  //   const newMode = !isDarkMode;
+  //   setIsDarkMode(newMode);
+  //   localStorage.setItem("isDarkMode", JSON.stringify(newMode));
+  //   if (newMode) {
+  //     document.documentElement.classList.add("dark");
+  //     document.body.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //     document.body.classList.remove("dark");
+  //   }
+  // }
 
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.remove("dark");
-    }
-  }, [isDarkMode]);
+  // useEffect(() => {
+  //   if (isDarkMode) {
+  //     document.documentElement.classList.add("dark");
+  //     document.body.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //     document.body.classList.remove("dark");
+  //   }
+  // }, [isDarkMode]);
   return (
     <BrowserRouter>
       <div className={isDarkMode ? "dark" : ""}>
