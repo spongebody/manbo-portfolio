@@ -23,8 +23,8 @@ const ExperienceCard = ({ experience }) => {
     color: "#fff",
     arrowStyle: { borderRight: "7px solid  #84AC87" },
   };
-  const isDarkMode = JSON.parse(localStorage.getItem("isDarkMode"));
-  // console.log(isDarkMode)
+  // const isDarkMode = JSON.parse(localStorage.getItem("isDarkMode"));
+  const isDarkMode = true;
   return (
     <VerticalTimelineElement
       contentStyle={{
