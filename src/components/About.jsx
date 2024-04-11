@@ -47,10 +47,22 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 dark:text-secondary text-lsecondary text-[17px] max-w-3xl leading-[30px]"
       >
-        我是一名在读研究生，熟练web开发和移动端开发，熟练使用TypeScript和JavaScript，
-        并且熟悉使用Reac、Vue等流行的前端框架。掌握Node.js、Mongodb、python等后端相关技术。
-        了解机器学习和深度学习，熟练使用Git、Docker等工具以及Linux常用命令。
-        我具备较强的学习能力，能够快速学习并掌握新技术，能够独立完成项目开发。
+        燕山大学在读研究生，一个喜欢打篮球的程序员。
+        擅长使用React和Vue进行网页开发，React Native进行移动端开发。
+        精通TypeScript和JavaScript。
+        熟练使用Node和python进行API开发，熟悉Express和Django框架。
+        对机器学习和深度学习有一定了解，可以开发AI相关应用。
+        熟练使用Git、Docker等工具以及Linux常用命令。
+        平时喜欢用Notion记录生活和学习，用Anki进行知识复习，最喜欢的前端教学网站是
+        <a
+          className="text-blue-500 hover:underline"
+          href="https://frontendmasters.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          frontendmasters
+        </a>
+        。
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

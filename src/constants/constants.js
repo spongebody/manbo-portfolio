@@ -25,6 +25,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  dt,
 } from "../assets";
 
 export const navLinks = [
@@ -119,6 +120,21 @@ const technologies = [
 const experiences = [
   {
     title: "前端工程师",
+    company_name: "达闼机器人股份有限公司",
+    icon: dt,
+    iconBg: "#383E56",
+    date: "202309 - 202402",
+    points: [
+      "基于form-create和Ant Design Vue开发公司UI框架Cross-UI，基于Cross-UI开发公司各业务系统平台，如开发面向运营的机器人操作管理系统，面向客户的业务系统",
+      "基于form-create实现动态表单组件，支持所有业务系统的复杂表单操作。如多个表单的动态创建、删除、修改等多种操作",
+      "基于a-table实现面向业务的page-table组件，具有多个定制化功能。如定时刷新表格、数据视图切换、tab保存筛选条件等多个功能",
+      "基于Annotorious实现图片标注组件，支持对图片进行打点标注、框选标注等多种图片标注功能。期间对该开源项目提交PR，被成功合并。PR地址：https://github.com/recogito/recogito-client-core/pull/120",
+      "成功将Cross-UI从Vue 2升级到Vue 3 + TS，运用Composition API和新的响应式系统，增强了项目的可维护性和类型安全性",
+      "基于uni-app开发机器人管家小程序，具有实时查看机器人位置、状态，下发控制命令等功能",
+    ],
+  },
+  {
+    title: "前端工程师",
     company_name: "中国外运华南有限公司",
     icon: sinotrans,
     iconBg: "#383E56",
@@ -137,7 +153,7 @@ const experiences = [
     company_name: "Hippo4j开源项目 - 开源之夏",
     icon: opensource,
     iconBg: "#E6DEDD",
-    date: "202302 - 至今",
+    date: "202306 - 202310",
     points: [
       "项目基于Docusaurus 和React进行开发",
       "对官网界面进行了重新设计，并使用Tailwind CSS完成响应式布局和快速开发",

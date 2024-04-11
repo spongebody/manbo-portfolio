@@ -28,6 +28,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import sinotrans from "./company/sinotrans.png";
 import opensource from "./company/opensource.png";
+import dt from "./company/dt.png";
 
 // project
 import carrent from "./carrent.png";
@@ -70,4 +71,5 @@ export {
   tripguide,
   hippo4j,
   waiyun,
+  dt,
 };
